@@ -79,7 +79,7 @@ const Navbar = () => {
 
       {/* Links desktop */}
       <ul className="hidden md:flex gap-6">
-        <li><a href="#products" className="hover:text-gray-300">Ofertas</a></li>
+        <li><a href="#ofertas" className="hover:text-gray-300">Ofertas</a></li>
         <li><a href="#about" className="hover:text-gray-300">Quienes Somos</a></li>
         <li><a href="#contact" className="hover:text-gray-300">Contactanos</a></li>
       </ul>

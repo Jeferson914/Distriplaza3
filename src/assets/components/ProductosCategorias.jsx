@@ -4,10 +4,10 @@ import licoresData from "../data/licoresData";
 
 const ProductosCategorias = () => {
   return (
-    <section className="py-12 bg-linear-180 from-green-400 to-green-900">
+    <section className="py-12 bg-linear-180 from-green-900 to-gray-900">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-2xl font-bold mb-8 text-center text-gray-800">
-         Productos 
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-300">
+         Licores
         </h2>
 
         {/* Iteramos categorías */}
@@ -15,12 +15,12 @@ const ProductosCategorias = () => {
           <div key={categoria} className="mb-12">
             {/* Título de la categoría */}
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-xl font-semibold  text-gray-700">
+              <h3 className="text-xl font-semibold  text-gray-200 shadow-2xl shadow-white">
                 {categoria}
               </h3>
               <Link
                 to={`/categoria/${categoria}`}
-                className="text-red-600 hover:underline"
+                className="text-gray-300 hover:underline"
               >
                 Ver más →
               </Link>
@@ -31,7 +31,8 @@ const ProductosCategorias = () => {
               {licoresData[categoria].slice(0, 3).map((producto) => (
                 <div
                   key={producto.id}
-                  className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center hover:shadow-lg transition"
+                  className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center 
+                  hover:shadow-2xl shadow-white transform hover:scale-105 trnsition duration-300 ease-in-out"
                 >
                   <img
                     src={producto.img}
@@ -41,8 +42,8 @@ const ProductosCategorias = () => {
                   <h4 className="font-semibold text-gray-700">
                     {producto.name}
                   </h4>
-                  <p className="text-red-600 font-bold">{producto.price}</p>
-                  <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                  <p className="text-black font-bold">{producto.price}</p>
+                  <button className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-700 transiton duration-300">
                     Agregar al carrito
                   </button>
                 </div>

@@ -9,9 +9,11 @@ const Ofertas = () => {
   
 
   return (
-    <section className="py-12 bg-linear-180 from-green-200 to-green-400">
+    <section className="py-12 bg-linear-180 from-gray-900 to-orange-900" id="ofertas">
+
+      
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-2xl font-bold mb-8 text-center text-gray-800">
+        <h2 className="text-white text-2xl  font-extrabold mb-8 text-center ">
            Ofertas Especiales
         </h2>
 
@@ -30,14 +32,14 @@ const Ofertas = () => {
               />
 
               {/* Nombre */}
-              <h3 className="font-semibold text-gray-700">{producto.name}</h3>
+              <h3 className="font-semibold text-gray-300">{producto.name}</h3>
 
               {/* Precios */}
               <div className="mt-2">
-                <span className="text-gray-500 line-through mr-2">
+                <span className="text-gray-300 line-through mr-2">
                   {producto.oldPrice}
                 </span>
-                <span className="text-black font-bold text-lg">
+                <span className="text-gray-200 font-bold text-lg">
                   {producto.price}
                 </span>
               </div>
